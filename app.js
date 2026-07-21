@@ -16,11 +16,13 @@ if(musamamProduct)Object.assign(musamamProduct,{name:'Musamam White Intense',gen
 const asadBlackProduct=products.find(p=>p.id==='asad-black');
 if(asadBlackProduct)Object.assign(asadBlackProduct,{gender:'Masculino',tone:'Oriental',accords:'Âmbar · Especiado fresco · Amadeirado · Baunilha · Especiado quente · Doce · Tabaco · Atalcado · Patchouli · Balsâmico',image:'assets/products/asad-black.jpg'});
 const azzaroProduct=products.find(p=>p.id==='azzaro');
+const kitYaraProduct=products.find(p=>p.id==='kit-yara-mini');
+if(kitYaraProduct)Object.assign(kitYaraProduct,{name:'Kit Yara 5 ml',volume:'4 unidades de 5 ml',price:240,tone:'Seleção de miniaturas Yara',image:'assets/products/kit-yara-4x5ml.webp'});
 if(azzaroProduct)Object.assign(azzaroProduct,{name:'Azzaro Pour Homme',gender:'Masculino',tone:'Aromático amadeirado',accords:'Aromático · Amadeirado · Especiado fresco · Terroso · Lavanda · Anis · Especiado suave · Musgo · Couro · Cítricos',image:'assets/products/azzaro-pour-homme.jpg'});
 const decants=window.STORE_DECANTS, kits=window.STORE_KITS;
 let cart=JSON.parse(localStorage.getItem('lk_cart')||'[]'), active='Todos', query='';
 const categories=['Todos','Feminino','Masculino','Unissex'];
-const stockLimits={fakhar:1,yara:1,queen:2,haya:2,'asad-bourbon':1,musamam:1,'asad-black':1,azzaro:2};
+const stockLimits={fakhar:1,yara:1,queen:2,haya:2,'asad-bourbon':1,musamam:1,'asad-black':1,azzaro:2,'kit-yara-mini':1};
 
 function productArt(p){if(p.image)return `<img class="product-photo" src="${p.image}" alt="${p.name} ${p.brand} com embalagem">`;const initials=p.name.split(' ').filter(x=>x.length>2).slice(0,2).map(x=>x[0]).join('');return `<div class="bottle-art"><span class="cap"></span><span class="bottle">${initials}</span></div>`}
 function productExtra(p){if(!p.accords&&!p.notes)return '';return `<details class="product-notes"><summary>Ver perfil olfativo</summary>${p.accords?`<p><strong>Acordes:</strong> ${p.accords}</p>`:''}${p.notes?`<p><strong>Notas:</strong> ${p.notes}</p>`:''}${p.use?`<p><strong>Uso:</strong> ${p.use}</p>`:''}</details>`}
