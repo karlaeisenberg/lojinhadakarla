@@ -6,7 +6,7 @@ if(fakharProduct)Object.assign(fakharProduct,{gender:'Masculino',tone:'Amadeirad
 const yaraProduct=products.find(p=>p.id==='yara');
 if(yaraProduct)Object.assign(yaraProduct,{gender:'Feminino',tone:'Doce e cremoso',accords:'Doce · Baunilha · Atalcado · Tropical · Frutado · Almíscar · Floral · Cítricos',image:'assets/products/yara-rosa.jpeg'});
 const queenProduct=products.find(p=>p.id==='queen');
-if(queenProduct)Object.assign(queenProduct,{gender:'Feminino',tone:'Floral luxuoso',image:'assets/products/queen-of-arabia.jpeg'});
+if(queenProduct)Object.assign(queenProduct,{gender:'Feminino',tone:'Doce floral branco',accords:'Doce · Tuberosa · Baunilha · Coco · Floral branco',notes:'Tuberosa · Rum · Coco · Ameixa · Baunilha · Almíscar · Âmbar',use:'Versátil para o dia a dia, encontros, eventos, trabalho e ocasiões especiais.',image:'assets/products/queen-of-arabia.jpeg'});
 const hayaProduct=products.find(p=>p.id==='haya');
 if(hayaProduct)Object.assign(hayaProduct,{gender:'Feminino',tone:'Floral frutado',image:'assets/products/haya.jpeg'});
 const asadBourbonProduct=products.find(p=>p.id==='asad-bourbon');
@@ -17,7 +17,7 @@ const categories=['Todos','Feminino','Masculino','Unissex'];
 const stockLimits={fakhar:1,yara:1,queen:2,haya:2,'asad-bourbon':1};
 
 function productArt(p){if(p.image)return `<img class="product-photo" src="${p.image}" alt="${p.name} ${p.brand} com embalagem">`;const initials=p.name.split(' ').filter(x=>x.length>2).slice(0,2).map(x=>x[0]).join('');return `<div class="bottle-art"><span class="cap"></span><span class="bottle">${initials}</span></div>`}
-function productExtra(p){return p.accords?`<details class="product-notes"><summary>Ver perfil olfativo</summary><p>${p.accords}</p></details>`:''}
+function productExtra(p){if(!p.accords&&!p.notes)return '';return `<details class="product-notes"><summary>Ver perfil olfativo</summary>${p.accords?`<p><strong>Acordes:</strong> ${p.accords}</p>`:''}${p.notes?`<p><strong>Notas:</strong> ${p.notes}</p>`:''}${p.use?`<p><strong>Uso:</strong> ${p.use}</p>`:''}</details>`}
 function productBadge(p){const limit=stockLimits[p.id];return limit===1?'Última unidade':limit===2?'2 unidades':p.badge}
 function renderFilters(){ $('#filters').innerHTML=categories.map(c=>`<button class="chip ${c===active?'active':''}" data-filter="${c}">${c}</button>`).join('') }
 function renderProducts(){let list=products.filter(p=>(active==='Todos'||p.gender===active)&&(`${p.name} ${p.brand} ${p.tone}`.toLowerCase().includes(query)));const sort=$('#sort').value;if(sort==='price-asc')list.sort((a,b)=>a.price-b.price);if(sort==='price-desc')list.sort((a,b)=>b.price-a.price);if(sort==='name')list.sort((a,b)=>a.name.localeCompare(b.name));if(sort==='featured')list.sort((a,b)=>Number(b.featured)-Number(a.featured));$('#productGrid').innerHTML=list.map(p=>`<article class="product-card"><div class="product-visual">${productArt(p)}<span class="badge">${productBadge(p)}</span></div><div class="product-info"><p>${p.brand}</p><h3>${p.name}</h3><span>${p.tone} · ${p.volume}</span>${productExtra(p)}<div class="product-bottom"><strong>${money(p.price)}</strong><button class="add" data-add="${p.id}" aria-label="Adicionar ${p.name}">+</button></div></div></article>`).join('');$('#emptyState').hidden=!!list.length}
