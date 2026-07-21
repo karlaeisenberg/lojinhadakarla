@@ -8,7 +8,7 @@ window.STORE_PRODUCTS = [
   {id:'sabah',name:'Sabah Al Ward EDP',brand:'Al Wataniah',volume:'100 ml',price:259,gender:'Feminino',badge:'Importado',tone:'Floral adocicado',featured:false},
   {id:'fakhar',name:'Fakhar Extrait Gold',brand:'Lattafa',volume:'100 ml',price:369,gender:'Masculino',badge:'Última unidade',tone:'Amadeirado aromático',accords:'Âmbar · Tuberosa · Floral branco · Almíscar · Cítricos · Especiarias quentes · Madeiras · Couro',image:'assets/products/fakhar-gold.jpeg',stock:1,featured:false},
   {id:'yara',name:'Yara Rosa',brand:'Lattafa',volume:'100 ml',price:299,gender:'Feminino',badge:'Última unidade',tone:'Doce e cremoso',accords:'Doce · Baunilha · Atalcado · Tropical · Frutado · Almíscar · Floral · Cítricos',image:'assets/products/yara-rosa.jpeg',stock:1,featured:true},
-  {id:'queen',name:'Queen of Arabia',brand:'Importado',volume:'100 ml',price:569,gender:'Feminino',badge:'Exclusivo',tone:'Floral luxuoso',featured:true},
+  {id:'queen',name:'Queen of Arabia',brand:'Importado',volume:'100 ml',price:569,gender:'Feminino',badge:'2 unidades',tone:'Floral luxuoso',image:'assets/products/queen-of-arabia.jpeg',stock:2,featured:true},
   {id:'haya',name:'Haya',brand:'Lattafa',volume:'100 ml',price:347,gender:'Feminino',badge:'Importado',tone:'Floral frutado',featured:false},
   {id:'asad-bourbon',name:'Asad Bourbon',brand:'Lattafa',volume:'100 ml',price:359,gender:'Masculino',badge:'Lançamento',tone:'Quente especiado',featured:true},
   {id:'musamam',name:'Musamam Branco',brand:'Lattafa',volume:'100 ml',price:464,gender:'Unissex',badge:'Exclusivo',tone:'Amadeirado elegante',featured:false},
