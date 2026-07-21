@@ -19,8 +19,8 @@ window.STORE_PRODUCTS = [
 ];
 window.STORE_DECANTS = ['Yara Rosa','Queen of Arabia','Haya','Asad Bourbon','Asad Black','Durrat Al Aroos','Maison Alhambra Salvo','Sabah Al Ward'].map((name,i)=>({id:'decant-'+i,name:'Decante '+name,brand:'5 ml',volume:'5 ml',price:35,type:'decant'}));
 window.STORE_KITS = [
-  {id:'kit-feminino',name:'Kit Feminino',description:'3 fragrâncias femininas selecionadas',basePrice:947},
-  {id:'kit-masculino',name:'Kit Masculino',description:'3 perfumes marcantes selecionados',basePrice:1037},
-  {id:'kit-arabe',name:'Kit Árabe',description:'3 sucessos da perfumaria árabe',basePrice:1003},
-  {id:'kit-decantes-4',name:'Kit Descoberta',description:'4 decantes de 5 ml à sua escolha',basePrice:140}
+  {id:'kit-feminino',name:'Kit Feminino Majestade',description:'Queen of Arabia + Haya',basePrice:916},
+  {id:'kit-casal',name:'Kit Casal Elegância',description:'Azzaro Pour Homme + Sabah Al Ward',basePrice:588},
+  {id:'kit-masculino',name:'Kit Masculino Elegância',description:'Azzaro Pour Homme + Club de Nuit Intense Man',basePrice:748},
+  {id:'kit-decantes-4',name:'Kit Descoberta',description:'4 decantes de 5 ml à sua escolha',basePrice:140,pixPrice:120,mumbucaPrice:120}
 ];
