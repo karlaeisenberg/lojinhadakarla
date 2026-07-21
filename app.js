@@ -12,7 +12,7 @@ if(hayaProduct)Object.assign(hayaProduct,{gender:'Feminino',tone:'Floral frutado
 const decants=window.STORE_DECANTS, kits=window.STORE_KITS;
 let cart=JSON.parse(localStorage.getItem('lk_cart')||'[]'), active='Todos', query='';
 const categories=['Todos','Feminino','Masculino','Unissex'];
-const stockLimits={fakhar:1,yara:1,queen:2};
+const stockLimits={fakhar:1,yara:1,queen:2,haya:2};
 
 function productArt(p){if(p.image)return `<img class="product-photo" src="${p.image}" alt="${p.name} ${p.brand} com embalagem">`;const initials=p.name.split(' ').filter(x=>x.length>2).slice(0,2).map(x=>x[0]).join('');return `<div class="bottle-art"><span class="cap"></span><span class="bottle">${initials}</span></div>`}
 function productExtra(p){return p.accords?`<details class="product-notes"><summary>Ver perfil olfativo</summary><p>${p.accords}</p></details>`:''}
