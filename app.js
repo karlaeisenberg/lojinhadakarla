@@ -11,10 +11,12 @@ const hayaProduct=products.find(p=>p.id==='haya');
 if(hayaProduct)Object.assign(hayaProduct,{gender:'Feminino',tone:'Floral frutado',image:'assets/products/haya.jpeg'});
 const asadBourbonProduct=products.find(p=>p.id==='asad-bourbon');
 if(asadBourbonProduct)Object.assign(asadBourbonProduct,{gender:'Masculino',tone:'Oriental especiado',accords:'Baunilha · Cacau · Doce · Lavanda · Especiado fresco · Aromático · Âmbar · Especiado quente · Atalcado',image:'assets/products/asad-bourbon-nova.webp'});
+const musamamProduct=products.find(p=>p.id==='musamam');
+if(musamamProduct)Object.assign(musamamProduct,{name:'Musamam White Intense',gender:'Unissex',tone:'Oriental floral',accords:'Amadeirado · Especiado quente · Coco · Doce · Cítricos · Atalcado · Âmbar · Floral amarelo · Almiscarado · Baunilha',image:'assets/products/musamam-white-intense.webp'});
 const decants=window.STORE_DECANTS, kits=window.STORE_KITS;
 let cart=JSON.parse(localStorage.getItem('lk_cart')||'[]'), active='Todos', query='';
 const categories=['Todos','Feminino','Masculino','Unissex'];
-const stockLimits={fakhar:1,yara:1,queen:2,haya:2,'asad-bourbon':1};
+const stockLimits={fakhar:1,yara:1,queen:2,haya:2,'asad-bourbon':1,musamam:1};
 
 function productArt(p){if(p.image)return `<img class="product-photo" src="${p.image}" alt="${p.name} ${p.brand} com embalagem">`;const initials=p.name.split(' ').filter(x=>x.length>2).slice(0,2).map(x=>x[0]).join('');return `<div class="bottle-art"><span class="cap"></span><span class="bottle">${initials}</span></div>`}
 function productExtra(p){if(!p.accords&&!p.notes)return '';return `<details class="product-notes"><summary>Ver perfil olfativo</summary>${p.accords?`<p><strong>Acordes:</strong> ${p.accords}</p>`:''}${p.notes?`<p><strong>Notas:</strong> ${p.notes}</p>`:''}${p.use?`<p><strong>Uso:</strong> ${p.use}</p>`:''}</details>`}
