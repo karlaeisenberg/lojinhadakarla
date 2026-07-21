@@ -1,6 +1,8 @@
 const $=s=>document.querySelector(s), money=n=>n.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
 const defaults=[...window.STORE_PRODUCTS];
 const products=JSON.parse(localStorage.getItem('lk_products')||'null')||defaults;
+const sakeenaProduct=products.find(p=>p.id==='sakeena');
+if(sakeenaProduct)Object.assign(sakeenaProduct,{gender:'Feminino',tone:'Doce frutado floral',accords:'Doce · Frutado · Rosa · Tropical · Baunilha',use:'Versátil para o dia a dia, noites, encontros, eventos, trabalho e momentos especiais.',image:'assets/products/sakeena.webp'});
 const petraProduct=products.find(p=>p.id==='petra');
 if(petraProduct)Object.assign(petraProduct,{gender:'Unissex',tone:'Doce floral branco',accords:'Doce · Tuberosa · Baunilha · Coco · Floral branco',notes:'Tuberosa · Rum · Coco · Ameixa · Fava de baunilha · Almíscar',use:'Boa presença durante o dia e também à noite, com longevidade aproximada de 7 horas e rastro forte.',image:'assets/products/petra.jpeg'});
 const fakharProduct=products.find(p=>p.id==='fakhar');
@@ -26,7 +28,7 @@ if(azzaroProduct)Object.assign(azzaroProduct,{name:'Azzaro Pour Homme',gender:'M
 const decants=window.STORE_DECANTS, kits=window.STORE_KITS;
 let cart=JSON.parse(localStorage.getItem('lk_cart')||'[]'), active='Todos', query='';
 const categories=['Todos','Feminino','Masculino','Unissex'];
-const stockLimits={petra:1,fakhar:1,yara:1,queen:2,haya:2,'asad-bourbon':1,musamam:1,'asad-black':1,azzaro:2,'kit-yara-mini':1,khamrah:1};
+const stockLimits={sakeena:1,petra:1,fakhar:1,yara:1,queen:2,haya:2,'asad-bourbon':1,musamam:1,'asad-black':1,azzaro:2,'kit-yara-mini':1,khamrah:1};
 
 function productArt(p){if(p.image)return `<img class="product-photo" src="${p.image}" alt="${p.name} ${p.brand} com embalagem">`;const initials=p.name.split(' ').filter(x=>x.length>2).slice(0,2).map(x=>x[0]).join('');return `<div class="bottle-art"><span class="cap"></span><span class="bottle">${initials}</span></div>`}
 function productExtra(p){if(!p.accords&&!p.notes)return '';return `<details class="product-notes"><summary>Ver perfil olfativo</summary>${p.accords?`<p><strong>Acordes:</strong> ${p.accords}</p>`:''}${p.notes?`<p><strong>Notas:</strong> ${p.notes}</p>`:''}${p.use?`<p><strong>Uso:</strong> ${p.use}</p>`:''}</details>`}

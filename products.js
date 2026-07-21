@@ -1,6 +1,6 @@
 window.STORE_PRODUCTS = [
   {id:'petra',name:'Lattafa Petra EDP',brand:'Lattafa',volume:'100 ml',price:289,gender:'Unissex',badge:'Última unidade',tone:'Doce floral branco',accords:'Doce · Tuberosa · Baunilha · Coco · Floral branco',notes:'Tuberosa · Rum · Coco · Ameixa · Fava de baunilha · Almíscar',use:'Boa presença durante o dia e também à noite, com longevidade aproximada de 7 horas e rastro forte.',image:'assets/products/petra.jpeg',stock:1,featured:true},
-  {id:'sakeena',name:'Lattafa Sakeena EDP',brand:'Lattafa',volume:'100 ml',price:312,gender:'Feminino',badge:'Importado',tone:'Frutado gourmand',featured:true},
+  {id:'sakeena',name:'Lattafa Sakeena EDP',brand:'Lattafa',volume:'100 ml',price:312,gender:'Feminino',badge:'Última unidade',tone:'Doce frutado floral',accords:'Doce · Frutado · Rosa · Tropical · Baunilha',use:'Versátil para o dia a dia, noites, encontros, eventos, trabalho e momentos especiais.',image:'assets/products/sakeena.webp',stock:1,featured:true},
   {id:'durrat',name:'Durrat Al Aroos EDP',brand:'Al Wataniah',volume:'85 ml',price:246,gender:'Feminino',badge:'Importado',tone:'Floral oriental',featured:false},
   {id:'oud-mystery',name:'Oud Mystery Intense EDP',brand:'Al Wataniah',volume:'100 ml',price:359,gender:'Masculino',badge:'Importado',tone:'Amadeirado oriental',featured:false},
   {id:'salvo',name:'Maison Alhambra Salvo EDP',brand:'Maison Alhambra',volume:'100 ml',price:289,gender:'Masculino',badge:'Mais vendido',tone:'Aromático fresco',featured:true},
