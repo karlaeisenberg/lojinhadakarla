@@ -6,7 +6,7 @@ window.STORE_PRODUCTS = [
   {id:'salvo',name:'Maison Alhambra Salvo EDP',brand:'Maison Alhambra',volume:'100 ml',price:289,gender:'Masculino',badge:'Mais vendido',tone:'Aromático fresco',featured:true},
   {id:'club-nuit',name:'Club de Nuit Intense Man',brand:'Armaf',volume:'105 ml',price:419,gender:'Masculino',badge:'Mais vendido',tone:'Amadeirado cítrico',featured:true},
   {id:'sabah',name:'Sabah Al Ward EDP',brand:'Al Wataniah',volume:'100 ml',price:259,gender:'Feminino',badge:'Importado',tone:'Floral adocicado',featured:false},
-  {id:'fakhar',name:'Fakhar Extrait Gold',brand:'Lattafa',volume:'100 ml',price:369,gender:'Unissex',badge:'Importado',tone:'Oriental sofisticado',featured:false},
+  {id:'fakhar',name:'Fakhar Extrait Gold',brand:'Lattafa',volume:'100 ml',price:369,gender:'Masculino',badge:'Última unidade',tone:'Amadeirado aromático',accords:'Âmbar · Tuberosa · Floral branco · Almíscar · Cítricos · Especiarias quentes · Madeiras · Couro',stock:1,featured:false},
   {id:'yara',name:'Yara Rosa',brand:'Lattafa',volume:'100 ml',price:299,gender:'Feminino',badge:'Mais vendido',tone:'Doce cremoso',featured:true},
   {id:'queen',name:'Queen of Arabia',brand:'Importado',volume:'100 ml',price:569,gender:'Feminino',badge:'Exclusivo',tone:'Floral luxuoso',featured:true},
   {id:'haya',name:'Haya',brand:'Lattafa',volume:'100 ml',price:347,gender:'Feminino',badge:'Importado',tone:'Floral frutado',featured:false},
