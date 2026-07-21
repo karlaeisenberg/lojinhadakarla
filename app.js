@@ -10,7 +10,7 @@ if(queenProduct)Object.assign(queenProduct,{gender:'Feminino',tone:'Doce floral 
 const hayaProduct=products.find(p=>p.id==='haya');
 if(hayaProduct)Object.assign(hayaProduct,{gender:'Feminino',tone:'Floral frutado',image:'assets/products/haya.jpeg'});
 const asadBourbonProduct=products.find(p=>p.id==='asad-bourbon');
-if(asadBourbonProduct)Object.assign(asadBourbonProduct,{gender:'Masculino',tone:'Oriental especiado',accords:'Baunilha · Cacau · Doce · Lavanda · Especiado fresco · Aromático · Âmbar · Especiado quente · Atalcado',image:'assets/products/asad-bourbon.jpeg'});
+if(asadBourbonProduct)Object.assign(asadBourbonProduct,{gender:'Masculino',tone:'Oriental especiado',accords:'Baunilha · Cacau · Doce · Lavanda · Especiado fresco · Aromático · Âmbar · Especiado quente · Atalcado',image:'assets/products/asad-bourbon-nova.webp'});
 const decants=window.STORE_DECANTS, kits=window.STORE_KITS;
 let cart=JSON.parse(localStorage.getItem('lk_cart')||'[]'), active='Todos', query='';
 const categories=['Todos','Feminino','Masculino','Unissex'];
