@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090806">
+  <meta name="description" content="Perfumes importados, decantes e kits exclusivos. Finalize seu pedido pelo WhatsApp.">
+  <title>Lojinha da Karla | Perfumes Importados</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">Frete e prazo combinados pelo WhatsApp · Pix e cartão</div>
+  <header class="header">
+    <a class="brand" href="#inicio" aria-label="Lojinha da Karla - início"><img src="assets/logo.jpeg" alt="Lojinha da Karla"></a>
+    <button class="menu-button" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#catalogo">Perfumes</a><a href="#decantes">Decantes</a><a href="#kits">Kits</a><a href="#sobre">Sobre</a>
+    </nav>
+    <button class="cart-button" id="openCart" aria-label="Abrir carrinho">Sacola <span id="cartCount">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <img src="assets/hero.png" alt="Frascos de perfume sofisticados em cenário preto e dourado">
+      <div class="hero-shade"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">Perfumes importados originais</p>
+        <h1>Encontre uma fragrância que fala por você.</h1>
+        <p>Curadoria especial, atendimento próximo e uma experiência feita para transformar presença em memória.</p>
+        <div class="hero-actions"><a class="button gold" href="#catalogo">Explorar catálogo</a><a class="button ghost" href="#decantes">Conhecer decantes</a></div>
+      </div>
+      <div class="hero-promo"><strong>Compre 3 perfumes</strong><span>e ganhe 1 decante de 5 ml à sua escolha*</span></div>
+    </section>
+
+    <section class="benefits" aria-label="Vantagens">
+      <div><span>✦</span><b>Originais</b><small>Curadoria de importados</small></div>
+      <div><span>◇</span><b>Pix e cartão</b><small>Facilidade para pagar</small></div>
+      <div><span>♡</span><b>Atendimento pessoal</b><small>Direto no WhatsApp</small></div>
+      <div><span>↗</span><b>Envio combinado</b><small>Prazo sob consulta</small></div>
+    </section>
+
+    <section class="section" id="catalogo">
+      <div class="section-heading"><div><p class="eyebrow">Nossa seleção</p><h2>Perfumes para deixar sua marca</h2></div><p>Escolha seu favorito e finalize com atendimento personalizado.</p></div>
+      <div class="catalog-tools">
+        <label class="search"><span>⌕</span><input id="search" type="search" placeholder="Buscar por perfume ou marca" aria-label="Buscar produtos"></label>
+        <div class="filters" id="filters" aria-label="Filtrar produtos"></div>
+        <select id="sort" aria-label="Ordenar produtos"><option value="featured">Em destaque</option><option value="price-asc">Menor preço</option><option value="price-desc">Maior preço</option><option value="name">Nome A–Z</option></select>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <p class="empty" id="emptyState" hidden>Nenhum perfume encontrado. Tente outra busca.</p>
+    </section>
+
+    <section class="decant-section" id="decantes">
+      <div class="decant-copy"><p class="eyebrow">Descubra antes de escolher</p><h2>Decantes de 5 ml</h2><p>Uma forma prática de conhecer a fragrância, levar na bolsa ou variar no dia a dia.</p><div class="price-line"><strong>R$ 35,00</strong><span>por unidade</span></div><small>*Na compra de 3 perfumes em tamanho regular, escolha 1 decante grátis, conforme disponibilidade.</small></div>
+      <div class="decant-list" id="decantGrid"></div>
+    </section>
+
+    <section class="section kits" id="kits">
+      <div class="section-heading"><div><p class="eyebrow">Condições especiais</p><h2>Kits Exclusivos</h2></div><div class="discount-note"><b>15% OFF no Pix</b><span>ou 5% OFF no cartão em até 6x sem juros</span></div></div>
+      <div class="kit-grid" id="kitGrid"></div>
+      <p class="kit-note">Os perfumes de cada kit e a disponibilidade são confirmados durante o atendimento no WhatsApp.</p>
+    </section>
+
+    <section class="about" id="sobre">
+      <div><p class="eyebrow">Mais do que perfume</p><h2>Uma escolha com carinho, do início ao fim.</h2></div>
+      <p>Na Lojinha da Karla, cada fragrância é escolhida para acompanhar histórias, encontros e momentos especiais. Você recebe orientação próxima para encontrar o perfume que combina com seu estilo.</p>
+    </section>
+
+    <section class="faq section"><p class="eyebrow">Dúvidas frequentes</p><h2>Antes de pedir</h2><details><summary>Como faço meu pedido?</summary><p>Adicione os produtos à sacola e clique em “Finalizar no WhatsApp”. A mensagem já seguirá com o resumo do pedido.</p></details><details><summary>Como funciona o decante grátis?</summary><p>A cada 3 perfumes em tamanho regular no mesmo pedido, você ganha 1 decante de 5 ml à escolha, conforme disponibilidade.</p></details><details><summary>Quais são as formas de pagamento?</summary><p>Aceitamos Pix e cartão. Nos Kits Exclusivos, há 15% de desconto no Pix ou 5% no cartão em até 6x sem juros.</p></details><details><summary>Como funciona a entrega?</summary><p>Prazo, valor e modalidade de entrega são combinados diretamente no atendimento.</p></details></section>
+  </main>
+
+  <footer><img src="assets/logo.jpeg" alt="Lojinha da Karla"><p>Sua fragrância, sua identidade.</p><div><a href="https://wa.me/5521999000170" target="_blank" rel="noopener">WhatsApp</a><a href="https://instagram.com/lojinhadakarla_ofc" target="_blank" rel="noopener">@lojinhadakarla_ofc</a></div><small>© <span id="year"></span> Lojinha da Karla. Todos os direitos reservados.</small></footer>
+
+  <a class="whatsapp-float" href="https://wa.me/5521999000170?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Lojinha%20da%20Karla." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">W</a>
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart" id="cart" aria-label="Sacola de compras" aria-hidden="true"><div class="cart-head"><div><p class="eyebrow">Seu pedido</p><h2>Sacola</h2></div><button id="closeCart" aria-label="Fechar carrinho">×</button></div><div class="cart-items" id="cartItems"></div><div class="gift-choice" id="giftChoice" hidden><label for="giftSelect">Seu decante grátis</label><select id="giftSelect"></select><small>Benefício liberado a cada 3 perfumes em tamanho regular.</small></div><div class="payment"><p>Como prefere pagar?</p><label><input type="radio" name="payment" value="Pix" checked> Pix</label><label><input type="radio" name="payment" value="Cartão"> Cartão</label></div><label class="notes">Observações<textarea id="notes" rows="2" placeholder="Ex.: presente, preferência de entrega..."></textarea></label><div class="cart-total"><span>Total estimado</span><strong id="cartTotal">R$ 0,00</strong><small id="discountText"></small></div><button class="button gold full" id="checkout">Finalizar no WhatsApp</button><small class="checkout-note">O pedido e a disponibilidade serão confirmados no atendimento.</small></aside>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="products.js"></script><script src="app.js"></script>
+</body>
+</html>

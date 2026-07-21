@@ -1,0 +1,1 @@
+{"name":"lojinha-da-karla","version":"1.0.1","private":true,"scripts":{"dev":"npx serve .","build":"node build.js"},"engines":{"node":">=18"}}
