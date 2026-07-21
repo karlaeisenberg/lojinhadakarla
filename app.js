@@ -7,6 +7,8 @@ const oudMysteryProduct=products.find(p=>p.id==='oud-mystery');
 if(oudMysteryProduct)Object.assign(oudMysteryProduct,{gender:'Unissex',tone:'Amadeirado especiado',accords:'Oud · Especiado fresco · Especiado quente · Patchouli · Almiscarado · Lavanda · Metálico · Atalcado · Amadeirado · Terroso',image:'assets/products/oud-mystery-intense.jpeg'});
 const salvoProduct=products.find(p=>p.id==='salvo');
 if(salvoProduct)Object.assign(salvoProduct,{gender:'Masculino',tone:'Aromático fresco',accords:'Especiado fresco · Cítricos · Âmbar · Lavanda · Aromático · Almiscarado · Herbal · Floral · Anis · Especiado suave',image:'assets/products/salvo.jpeg'});
+const clubNuitProduct=products.find(p=>p.id==='club-nuit');
+if(clubNuitProduct)Object.assign(clubNuitProduct,{gender:'Masculino',tone:'Amadeirado cítrico',accords:'Cítrico · Frutado · Couro · Defumado · Amadeirado',notes:'Limão verdadeiro · Vidoeiro · Abacaxi · Bergamota · Almíscar · Groselha-preta',use:'Boa presença durante o dia e à noite, com longevidade aproximada de 8 horas e rastro forte.',image:'assets/products/club-de-nuit-intense.jpeg'});
 const sakeenaProduct=products.find(p=>p.id==='sakeena');
 if(sakeenaProduct)Object.assign(sakeenaProduct,{gender:'Feminino',tone:'Doce frutado floral',accords:'Doce · Frutado · Rosa · Tropical · Baunilha',use:'Versátil para o dia a dia, noites, encontros, eventos, trabalho e momentos especiais.',image:'assets/products/sakeena.webp'});
 const petraProduct=products.find(p=>p.id==='petra');
@@ -34,7 +36,7 @@ if(azzaroProduct)Object.assign(azzaroProduct,{name:'Azzaro Pour Homme',gender:'M
 const decants=window.STORE_DECANTS, kits=window.STORE_KITS;
 let cart=JSON.parse(localStorage.getItem('lk_cart')||'[]'), active='Todos', query='';
 const categories=['Todos','Feminino','Masculino','Unissex'];
-const stockLimits={salvo:1,'oud-mystery':1,durrat:1,sakeena:1,petra:1,fakhar:1,yara:1,queen:2,haya:2,'asad-bourbon':1,musamam:1,'asad-black':1,azzaro:2,'kit-yara-mini':1,khamrah:1};
+const stockLimits={'club-nuit':1,salvo:1,'oud-mystery':1,durrat:1,sakeena:1,petra:1,fakhar:1,yara:1,queen:2,haya:2,'asad-bourbon':1,musamam:1,'asad-black':1,azzaro:2,'kit-yara-mini':1,khamrah:1};
 
 function productArt(p){if(p.image)return `<img class="product-photo" src="${p.image}" alt="${p.name} ${p.brand} com embalagem">`;const initials=p.name.split(' ').filter(x=>x.length>2).slice(0,2).map(x=>x[0]).join('');return `<div class="bottle-art"><span class="cap"></span><span class="bottle">${initials}</span></div>`}
 function productExtra(p){if(!p.accords&&!p.notes)return '';return `<details class="product-notes"><summary>Ver perfil olfativo</summary>${p.accords?`<p><strong>Acordes:</strong> ${p.accords}</p>`:''}${p.notes?`<p><strong>Notas:</strong> ${p.notes}</p>`:''}${p.use?`<p><strong>Uso:</strong> ${p.use}</p>`:''}</details>`}
