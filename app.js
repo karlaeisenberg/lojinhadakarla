@@ -7,6 +7,8 @@ const yaraProduct=products.find(p=>p.id==='yara');
 if(yaraProduct)Object.assign(yaraProduct,{gender:'Feminino',tone:'Doce e cremoso',accords:'Doce · Baunilha · Atalcado · Tropical · Frutado · Almíscar · Floral · Cítricos',image:'assets/products/yara-rosa.jpeg'});
 const queenProduct=products.find(p=>p.id==='queen');
 if(queenProduct)Object.assign(queenProduct,{gender:'Feminino',tone:'Floral luxuoso',image:'assets/products/queen-of-arabia.jpeg'});
+const hayaProduct=products.find(p=>p.id==='haya');
+if(hayaProduct)Object.assign(hayaProduct,{gender:'Feminino',tone:'Floral frutado',image:'assets/products/haya.jpeg'});
 const decants=window.STORE_DECANTS, kits=window.STORE_KITS;
 let cart=JSON.parse(localStorage.getItem('lk_cart')||'[]'), active='Todos', query='';
 const categories=['Todos','Feminino','Masculino','Unissex'];
