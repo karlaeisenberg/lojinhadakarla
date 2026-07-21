@@ -15,7 +15,7 @@ window.STORE_PRODUCTS = [
   {id:'asad-black',name:'Asad Black',brand:'Lattafa',volume:'100 ml',price:329,gender:'Masculino',badge:'Última unidade',tone:'Oriental',accords:'Âmbar · Especiado fresco · Amadeirado · Baunilha · Especiado quente · Doce · Tabaco · Atalcado · Patchouli · Balsâmico',image:'assets/products/asad-black.jpg',stock:1,featured:true},
   {id:'azzaro',name:'Azzaro Pour Homme',brand:'Azzaro',volume:'100 ml',price:329,gender:'Masculino',badge:'2 unidades',tone:'Aromático amadeirado',accords:'Aromático · Amadeirado · Especiado fresco · Terroso · Lavanda · Anis · Especiado suave · Musgo · Couro · Cítricos',image:'assets/products/azzaro-pour-homme.jpg',stock:2,featured:false},
   {id:'kit-yara-mini',name:'Kit Yara 5 ml',brand:'Lattafa',volume:'4 unidades de 5 ml',price:240,gender:'Feminino',badge:'Última unidade',tone:'Seleção de miniaturas Yara',image:'assets/products/kit-yara-4x5ml.webp',stock:1,featured:false},
-  {id:'khamrah',name:'Khamrah',brand:'Lattafa',volume:'100 ml',price:345,gender:'Unissex',badge:'Mais vendido',tone:'Gourmand especiado',featured:true}
+  {id:'khamrah',name:'Khamrah',brand:'Lattafa',volume:'100 ml',price:345,gender:'Unissex',badge:'Última unidade',tone:'Oriental especiado',accords:'Doce · Especiado quente · Baunilha · Âmbar · Canela · Amadeirado · Especiado fresco · Frutado',image:'assets/products/khamrah.jpeg',stock:1,featured:true}
 ];
 window.STORE_DECANTS = ['Yara Rosa','Queen of Arabia','Haya','Asad Bourbon','Asad Black','Durrat Al Aroos','Maison Alhambra Salvo','Sabah Al Ward'].map((name,i)=>({id:'decant-'+i,name:'Decante '+name,brand:'5 ml',volume:'5 ml',price:35,type:'decant'}));
 window.STORE_KITS = [
