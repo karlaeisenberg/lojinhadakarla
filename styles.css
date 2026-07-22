@@ -29,3 +29,6 @@
 /* Fotos dos produtos padronizadas em 4:5 */
 .product-photo{width:100%;height:100%;display:block;object-fit:contain;object-position:center;background:#fff;padding:8px;position:relative;z-index:0}
 .product-notes{margin-top:13px;border-top:1px solid var(--line);padding-top:10px}.product-notes summary{cursor:pointer;color:var(--gold2);font-size:11px}.product-notes p{color:var(--muted);font-size:10px;line-height:1.55;text-transform:none;letter-spacing:0;margin:9px 0 0}
+
+/* Mantém a nova logo horizontal do rodapé sem distorção. */
+footer img{width:min(300px,82vw);height:auto;max-height:190px;object-fit:contain}
