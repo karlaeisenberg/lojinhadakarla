@@ -31,7 +31,7 @@ const asadBlackProduct=products.find(p=>p.id==='asad-black');
 if(asadBlackProduct)Object.assign(asadBlackProduct,{gender:'Masculino',tone:'Oriental',accords:'Âmbar · Especiado fresco · Amadeirado · Baunilha · Especiado quente · Doce · Tabaco · Atalcado · Patchouli · Balsâmico',image:'assets/products/asad-black.jpg'});
 const azzaroProduct=products.find(p=>p.id==='azzaro');
 const kitYaraProduct=products.find(p=>p.id==='kit-yara-mini');
-if(kitYaraProduct)Object.assign(kitYaraProduct,{name:'Kit Yara 5 ml',volume:'4 unidades de 5 ml',price:240,tone:'Seleção de miniaturas Yara',image:'assets/products/kit-yara-4x5ml.webp'});
+if(kitYaraProduct)Object.assign(kitYaraProduct,{name:'Kit Yara 5 ml',volume:'4 unidades de 5 ml',tone:'Seleção de miniaturas Yara',image:'assets/products/kit-yara-4x5ml.webp'});
 const khamrahProduct=products.find(p=>p.id==='khamrah');
 if(khamrahProduct)Object.assign(khamrahProduct,{gender:'Unissex',tone:'Oriental especiado',accords:'Doce · Especiado quente · Baunilha · Âmbar · Canela · Amadeirado · Especiado fresco · Frutado',image:'assets/products/khamrah.jpeg'});
 if(azzaroProduct)Object.assign(azzaroProduct,{name:'Azzaro Pour Homme',gender:'Masculino',tone:'Aromático amadeirado',accords:'Aromático · Amadeirado · Especiado fresco · Terroso · Lavanda · Anis · Especiado suave · Musgo · Couro · Cítricos',image:'assets/products/azzaro-pour-homme.jpg'});
