@@ -14,7 +14,7 @@ if(sabahProduct)Object.assign(sabahProduct,{gender:'Feminino',tone:'Floral orien
 const sakeenaProduct=products.find(p=>p.id==='sakeena');
 if(sakeenaProduct)Object.assign(sakeenaProduct,{gender:'Feminino',tone:'Doce frutado floral',accords:'Doce · Frutado · Rosa · Tropical · Baunilha',use:'Versátil para o dia a dia, noites, encontros, eventos, trabalho e momentos especiais.',image:'assets/products/sakeena.webp'});
 const petraProduct=products.find(p=>p.id==='petra');
-if(petraProduct)Object.assign(petraProduct,{gender:'Unissex',tone:'Doce floral branco',accords:'Doce · Tuberosa · Baunilha · Coco · Floral branco',notes:'Tuberosa · Rum · Coco · Ameixa · Fava de baunilha · Almíscar',use:'Boa presença durante o dia e também à noite, com longevidade aproximada de 7 horas e rastro forte.',image:'assets/products/petra.jpeg'});
+if(petraProduct)Object.assign(petraProduct,{gender:'Feminino',tone:'Doce floral branco',accords:'Doce · Tuberosa · Baunilha · Coco · Floral branco',notes:'Tuberosa · Rum · Coco · Ameixa · Fava de baunilha · Almíscar',use:'Boa presença durante o dia e também à noite, com longevidade aproximada de 7 horas e rastro forte.',image:'assets/products/petra.jpeg'});
 const fakharProduct=products.find(p=>p.id==='fakhar');
 if(fakharProduct)Object.assign(fakharProduct,{gender:'Masculino',tone:'Amadeirado aromático',accords:'Âmbar · Tuberosa · Floral branco · Almíscar · Cítricos · Especiarias quentes · Madeiras · Couro',image:'assets/products/fakhar-gold.jpeg'});
 const yaraProduct=products.find(p=>p.id==='yara');
